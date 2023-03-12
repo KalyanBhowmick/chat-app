@@ -3,7 +3,10 @@ import { socket } from './socket';
 import { ConnectionState } from './components/ConnectionState';
 import { ConnectionManager } from './components/ConnectionManager';
 import { MyForm } from './components/MyForm';
-import {Events} from './components/Events'
+import {Events} from './components/Events';
+
+import { HomePage } from './components/Login'
+
 
 export default function App() {
   const [isConnected, setIsConnected] = useState(socket.connected);
@@ -35,14 +38,16 @@ export default function App() {
 
   return (
     <div className="App">
-      <ConnectionState isConnected={ isConnected } />
+      {/* <ConnectionState isConnected={ isConnected } />
       <Events events={ fooEvents } />
       <ConnectionManager />
       <MyForm />
 
       <h1 className="text-3xl font-bold underline">
       Hello Duniya!
-    </h1>
+    </h1> */}
+
+    <HomePage />
     </div>
   );
 }
