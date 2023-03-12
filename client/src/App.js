@@ -39,6 +39,10 @@ export default function App() {
       <Events events={ fooEvents } />
       <ConnectionManager />
       <MyForm />
+
+      <h1 className="text-3xl font-bold underline">
+      Hello Duniya!
+    </h1>
     </div>
   );
 }
